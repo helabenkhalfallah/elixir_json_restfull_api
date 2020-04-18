@@ -1,2 +1,1 @@
-# elixir-json-restfull-api
-Elixir JSON RESTful API
+# Elixir JSON RESTful API (without using Phoenix)
