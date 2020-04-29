@@ -37,6 +37,9 @@ defmodule ElixirJsonRestfullApi.UserEndpoint do
     Enum :
     https://hexdocs.pm/elixir/Enum.html#into/2
 
+    Type :
+    https://hexdocs.pm/elixir/typespecs.html
+
     Example :
     https://tomjoro.github.io/2017-02-09-ecto3-mongodb-phoenix/
   """
@@ -226,6 +229,6 @@ defmodule ElixirJsonRestfullApi.UserEndpoint do
   # A catchall route, 'match' will match no matter the request method,
   # so a response is always returned, even if there is no route to match.
   match _ do
-    send_resp(conn, 200, ServiceUtils.endpoint_error("exception"))
+    send_resp(conn, 404, ServiceUtils.endpoint_error("exception"))
   end
 end

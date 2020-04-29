@@ -39,7 +39,7 @@ defmodule ElixirJsonRestfullApi.ServiceUtils do
           error_type == 'missing_email' -> "Missing email"
           error_type == 'missing_username' -> "Missing username"
           error_type == 'missing_prams' -> "Missing query params"
-          error_type == 'exception' -> "An expected error was occurred"
+          true -> "An expected error was occurred"
         end
     })
   end
